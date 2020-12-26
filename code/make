@@ -1,0 +1,36 @@
+all: project
+
+project: main.o read_input.o reading_grid.o triangle_area.o initial_conditions.o boundary_conditions.o source.o thin_layer.o tangent_normal.o results.o
+	g++  main.o read_input.o reading_grid.o triangle_area.o initial_conditions.o boundary_conditions.o source.o thin_layer.o tangent_normal.o results.o -o project
+
+main.o: main.cpp
+	g++ -c main.cpp
+
+read_input.o: read_input.cpp
+	g++ -c read_input.cpp
+	
+reading_grid.o: reading_grid.cpp
+	g++ -c reading_grid.cpp
+
+triangle_area.o: triangle_area.cpp
+	g++ -c triangle_area.cpp
+
+initial_conditions.o: initial_conditions.cpp
+	g++ -c initial_conditions.cpp
+
+boundary_conditions.o: boundary_conditions.cpp
+	g++ -c boundary_conditions.cpp
+
+source.o: source.cpp
+	g++ -c source.cpp
+
+thin_layer.o: thin_layer.cpp
+	g++ -c thin_layer.cpp
+
+tanget_normal.o: tangent_normal.cpp
+	g++ -c tangent_normal.cpp
+
+results.o: results.cpp
+	g++ -c results.cpp
+	
+clean: rm *o project

@@ -1,0 +1,3 @@
+Convergence results for squaregrid_50_50.dat using thin layer method for spacial discretization and using incomplete LU decomposition integration method
+Number of Iterations: 1347
+CPU Time: 0.674991 sec

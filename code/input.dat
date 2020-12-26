@@ -1,0 +1,14 @@
+//Input file to the program
+squaregrid_50_50.dat //Mesh FileName(name should be without spaces)
+1 //Integer input: 1:Thin Layer Method 2:tangent/normal Method
+1 /Integer input: Boundary Condition Type for right boundary 1:Dirchilet 2:Neumann
+0.0000  //Float input: Value of the condition for right boundary
+1 //Integer input: Boundary Condition Type for top boundary 1:Dirchilet 2:Neumann
+0.000   //Float input: Value of the condition for top boundary
+2 //Integer input: Boundary Condition Type for left boundary 1:Dirchilet 2:Neumann
+0.000   //Float input: Value of the condition for left boundary
+1 //Integer input: Boundary Condition Type for bottom boundary 1:Dirchilet 2:Neumann
+0.000   //Float input: Value of the condition for bottom boundary
+2 //Integer Input: Integration Method 1:PJ Method 2: Incomplete LU Decomposition
+50000  /Integer Input: Maximum Number of iterations
+1e-4 //Float Input: Relative Tolernace
